@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script src="script.js"></script>
+    <title>Registration Form</title>
+
+    <style>
+        form{
+            border: 2px solid black;
+            padding: 20px;
+            width: 700px;
+            height: 500px;
+            /* background-color: lightblue; */
+            background-image: linear-gradient(white, grey);
+            margin: 85px auto;
+            padding: 25px;
+        }
+        
+        body{
+            background-image: url('nature.jpg'); 
+	        background-repeat: no-repeat;
+	        background-size: cover;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- form -->
+    <div class="container">
+        <form name="myform" onsubmit="return valid()">
+            <h1 align= "center" style="margin-bottom: -150px;">Registration Form</h1>
+            <br>
+            <table align="center">
+
+                <!-- name -->
+
+                <tr>
+                    <td><label>Enter Username: </label></td>
+                    <td><input type="text" name="name" size="20"></td>
+                    </tr>
+                    <br>
+                    <br>
+
+                    <!-- password -->
+                
+                <tr>
+                    <td><label> Enter Password: </label></td>
+                    <td><input type="password" name="password" length="6"></td>
+                </tr>
+                <br>
+
+                <!-- address -->
+
+                <tr>
+                    <td><label for="add"> Address: </label></td>
+                    <td><textarea cols="80" rows="5" name="add" id="address"></textarea></td>
+                </tr>
+                <br>
+                <br>
+
+                <tr>
+                    <td><lable for="int"> Fields of Intrest:</lable></td>
+                    <td><lable>Entertainment</lable>
+                    <input type="checkbox" id="Entertainment" name="hobi" value="Entertainment">
+                    <lable>Sports</lable>
+                    <input type="checkbox" id="Sports" name="hobi" value="Sports">
+                    <lable>News</lable>
+                    <input type="checkbox" id="News" name="hobi" value="News"></td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td><lable for="gen">Gender: </lable></td>
+                    <td><input type="radio" name="gen" id="male" value="Male">Male
+                    <input type="radio" name="gen" id="female" value="Female">Female
+                    </td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td><lable for="lan" id="lan">Select Language :</lable></td>
+                    <td>
+                    <select name="languag" id="languag">
+                    <option value="English">English</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Gujarati">Gujarati</option>
+                    </select>
+                    </td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td><lable for="contry" id="con">Select Country:</lable></td>
+                    <td>
+                    <select name="contry" id="contry">
+                    <option value="India">India</option>
+                    <option value="Shreelanka">Shreelanka</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Nepal">Nepal</option>
+                    </select>
+                    </td>
+                </tr>
+                <br>
+
+                <!-- <tr>
+                    <td><lable>Upload File Image:</lable></td>
+                    <td><input type="File" value="choose file" accept="image"></td>
+                </tr> -->
+                <br>
+                <br>
+                <tr>
+                    <td><button type="submit" value="submit" id="submit">Submit</button></td>
+                    <td><button type="cancel" value="Cancel">Cancel</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <!-- java script -->
+    <script>
+        
+    </script>
+</body>
+</html>
